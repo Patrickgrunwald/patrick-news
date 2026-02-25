@@ -7,7 +7,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-RSS_URL = "https://news.google.com/rss?hl=de&gl=DE&ceid=DE:de"
+RSS_URL = "https://news.google.com/rss/search?q=artificial+intelligence+OR+KI+OR+ChatGPT+OR+OpenAI+when:1d&hl=de&gl=DE&ceid=DE:de"
 MAX_ITEMS = 12
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "news.json"
@@ -85,14 +85,14 @@ def render_html(items):
   <head>
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
-    <title>Daily News</title>
+    <title>Daily KI News</title>
     <link rel=\"stylesheet\" href=\"styles.css\" />
   </head>
   <body>
     <main class=\"container\">
       <header>
-        <h1>Daily News</h1>
-        <p>Automatisch aktualisierte Top-News</p>
+        <h1>Daily KI News</h1>
+        <p>Automatisch aktualisierte KI-Top-News</p>
         <p class=\"updated\">Letztes Update: {now_local}</p>
       </header>
       <section class=\"news-grid\">

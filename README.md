@@ -1,6 +1,6 @@
-# Patrick NEWS
+# Patrick KI NEWS
 
-Einfache HTML/CSS-News-Seite, die automatisch aus einem RSS-Feed aktualisiert wird.
+Einfache HTML/CSS-News-Seite, die automatisch nur die neuesten KI-News aus einem RSS-Feed aktualisiert.
 
 ## Lokal testen
 
