@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Daily & Script</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: #121212; color: #E0E0E0; line-height: 1.6; }
+        header { text-align: center; padding: 40px 20px; background-color: #1E1E1E; border-bottom: 1px solid #333333; }
+        h1 { color: #BB86FC; margin-bottom: 5px; }
+        .date { color: #B0B0B0; font-size: 0.9em; }
+
+        main { max-width: 800px; margin: 40px auto; padding: 0 20px; display: grid; gap: 40px; }
+
+        .news-section { display: grid; gap: 30px; }
+        .news-card { background-color: #1E1E1E; border: 1px solid #333333; border-radius: 12px; padding: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(187, 134, 252, 0.15); border-color: #BB86FC; }
+        .news-card h2 { margin-top: 0; color: #fff; font-size: 1.4em; }
+        .meta-info { font-size: 0.85em; color: #B0B0B0; margin-bottom: 15px; display: block; }
+        .read-more { display: inline-block; margin-top: 15px; background-color: #BB86FC; color: #121212; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+        .read-more:hover { background-color: #a362ea; }
+
+        .tiktok-box { background-color: #1a1a1a; border: 2px dashed #BB86FC; border-radius: 15px; padding: 30px; position: relative; }
+        .tiktok-box h2 { color: #BB86FC; margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        .script-content { background: #121212; padding: 20px; border-radius: 8px; font-family: monospace; color: #fff; white-space: pre-line; }
+        .script-label { display: block; color: #B0B0B0; font-size: 0.8em; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+
+        footer { text-align: center; padding: 40px 20px; color: #555; font-size: 0.8em; margin-top: 40px; border-top: 1px solid #333; }
+
+        @media (max-width: 600px) {
+            header { padding: 30px 15px; }
+            main { padding: 0 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI News Daily</h1>
+        <p class="date">26. Februar 2026</p>
+    </header>
+
+    <main>
+        <section class="news-section">
+
+            <article class="news-card">
+                <h2>OpenAI launcht GPT-5.3 Codex – das mächtigste KI-Coding-Modell</h2>
+                <span class="meta-info">Quelle: OpenAI Blog &nbsp;|&nbsp; 26.02.2026</span>
+                <p>OpenAI hat GPT-5.3-Codex vorgestellt und bezeichnet es als das bislang fähigste agentische Coding-Modell überhaupt. Es soll die gesamte Bandbreite professioneller Computer-Arbeit abdecken – von Code-Reviews bis hin zur vollständigen autonomen Aufgabenausführung. Der Release markiert einen weiteren Meilenstein in der Abkehr von reinen Chatbots hin zu echten KI-Agenten. Gleichzeitig hat OpenAI ältere Modelle wie GPT-4o, GPT-4.1 und o4-mini aus dem ChatGPT-Portfolio gestrichen.</p>
+                <a href="https://openai.com/blog" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>Apple reimaginiert Siri komplett – powered by Google Gemini</h2>
+                <span class="meta-info">Quelle: Bloomberg &nbsp;|&nbsp; 26.02.2026</span>
+                <p>Apple hat offiziell eine vollständig neu gedachte, KI-gestützte Siri angekündigt, die im März 2026 mit iOS 26.4 debütieren soll. Die neue Siri setzt auf "On-Screen Awareness" und App-übergreifende Integration – angetrieben durch eine Partnerschaft mit Google und dessen 1,2-Billionen-Parameter-Modell Gemini, das über Apples Private Cloud Compute läuft. Zusätzlich gilt Visual Intelligence als das neue Kernelement für Apples Einstieg in KI-Wearables. Tim Cook signalisierte, dass dies erst der Anfang einer tiefgreifenden KI-Transformation des gesamten Apple-Ökosystems ist.</p>
+                <a href="https://www.bloomberg.com/news/newsletters/2026-02-22/apple-s-ai-wearables-push-what-to-expect-from-march-4-low-end-macbook-launch" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>Google DeepMind: Gemini 3.1 Pro schlägt ARC-AGI-2 mit 77,1 %</h2>
+                <span class="meta-info">Quelle: Google DeepMind Blog &nbsp;|&nbsp; 26.02.2026</span>
+                <p>Google DeepMind hat Gemini 3.1 Pro als fortschrittlichstes Pro-Tier-Modell Stand Februar 2026 positioniert. Das Modell glänzt mit einem 1-Million-Token-Kontextfenster, erzielt 77,1 % auf dem anspruchsvollen ARC-AGI-2-Benchmark und beherrscht multimodales Reasoning über Text, Bilder, Audio, Video und Code. Gleichzeitig will Samsung die Zahl der Gemini-fähigen Galaxy-Geräte auf 800 Millionen bis Ende 2026 verdoppeln – ein riesiger Rollout für generative KI in der Breite.</p>
+                <a href="https://deepmind.google/technologies/gemini/" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>xAI verliert Gründer-Riege: Tony Wu, Jimmy Ba & mehr treten ab</h2>
+                <span class="meta-info">Quelle: The Verge &nbsp;|&nbsp; 26.02.2026</span>
+                <p>Beim KI-Startup xAI von Elon Musk häufen sich die Abgänge: Mitgründer Tony Wu hat das Unternehmen verlassen, gefolgt von Jimmy Ba und weiteren Co-Foundern wie Igor Babuschkin, Kyle Kosic und Christian Szegedy. Der Exodus des Gründungsteams wirft Fragen über die interne Führungskultur und die strategische Ausrichtung von xAI auf. Das Unternehmen, das mit Grok einen eigenständigen KI-Assistenten betreibt, steht damit vor einer Neuaufstellung auf Top-Ebene.</p>
+                <a href="https://www.theverge.com" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>Zhipu AI veröffentlicht GLM-5: 744B-Parameter-Monster unter MIT-Lizenz</h2>
+                <span class="meta-info">Quelle: llm-stats.com &nbsp;|&nbsp; 26.02.2026</span>
+                <p>Das chinesische KI-Labor Zhipu AI hat GLM-5 veröffentlicht – ein Mixture-of-Experts-Modell mit 744 Milliarden Parametern (44B aktiv) und einem 200.000-Token-Kontextfenster. Mit 77,8 % auf SWE-bench Verified liefert es State-of-the-Art-Ergebnisse bei Software-Engineering-Aufgaben. Besonders bemerkenswert: Das Modell wurde vollständig auf Huawei-Ascend-Chips trainiert und ist unter der permissiven MIT-Lizenz frei verfügbar. Ein klares Signal, dass China im globalen KI-Rennen weiter aufholt.</p>
+                <a href="https://llm-stats.com/ai-news" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>Alibaba launcht Qwen3-Coder-Next: Open-Weight Coding Agent mit 80B</h2>
+                <span class="meta-info">Quelle: llm-stats.com &nbsp;|&nbsp; 26.02.2026</span>
+                <p>Alibabas Qwen-Team hat Qwen3-Coder-Next veröffentlicht, ein Open-Weight-Modell mit 80 Milliarden Parametern, das speziell für agentenbasierte Coding-Aufgaben optimiert wurde. Es soll starke Coding-Agenten liefern, die lokal wirtschaftlich betrieben werden können. Der Release unterstreicht den globalen Trend: KI-Coding-Tools werden nicht nur leistungsfähiger, sondern dank Open Weights auch für Entwickler weltweit zugänglicher.</p>
+                <a href="https://llm-stats.com/llm-updates" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+            <article class="news-card">
+                <h2>NVIDIA & Alpamayo: Millionen virtuelle Kilometer für selbstfahrende Autos</h2>
+                <span class="meta-info">Quelle: AI News &nbsp;|&nbsp; 26.02.2026</span>
+                <p>NVIDIA hat eine strategische Partnerschaft mit Alpamayo, einem Spezialisten für KI-gestützte Simulation, bekanntgegeben. Gemeinsam sollen auf Basis von NVIDIAs DRIVE Orin- und Thor-Plattformen Millionen von Kilometern virtuell simuliert werden, um physische Straßentests für selbstfahrende KI drastisch zu reduzieren. Alpamayos hochpräzise Digital-Twin-Technologie ermöglicht es, Sondersituationen und Edge Cases zu trainieren, die im realen Verkehr selten vorkommen. Die Partnerschaft könnte die Markteinführung autonomer Fahrzeuge erheblich beschleunigen.</p>
+                <a href="https://www.artificialintelligence-news.com/" target="_blank" class="read-more">Artikel lesen</a>
+            </article>
+
+        </section>
+
+        <section class="tiktok-box">
+            <h2>📱 Daily Content Skript</h2>
+            <p style="color: #B0B0B0; margin-bottom: 20px;">Basierend auf den heutigen Top-News. Bereit zur Aufnahme.</p>
+
+            <div class="script-content">
+<span class="script-label">0:00 - 0:03 (Hook)</span>
+"Vergiss Siri, vergiss ChatGPT – die KI-Welt hat sich heute gleich dreimal neu erfunden."
+
+<span class="script-label" style="margin-top: 15px;">0:03 - 0:25 (Main Part)</span>
+"Erstens: OpenAI hat GPT-5.3 Codex rausgebracht – das soll jetzt jede professionelle Aufgabe am Computer alleine erledigen können."
+
+"Zweitens: Apple macht Siri komplett neu – diesmal powered by Googles Gemini. Ja, du hast richtig gehört. Apple. Google. Ein Modell."
+
+"Drittens: Bei Elon Musks xAI laufen die Gründer weg – gleich fünf Co-Founder haben das Unternehmen innerhalb von Tagen verlassen."
+
+<span class="script-label" style="margin-top: 15px;">0:25 - 0:30 (Outro/CTA)</span>
+"Welche dieser News überrascht dich am meisten? Schreib es in die Kommentare – und folge mir, damit du morgen wieder up to date bist."
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Generiert am 26.02.2026 von deinem AI-Assistant. | ./ai-news/2026-02-26.html
+    </footer>
+</body>
+</html>
